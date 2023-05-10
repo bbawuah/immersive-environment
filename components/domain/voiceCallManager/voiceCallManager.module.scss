@@ -1,0 +1,78 @@
+.notificationContainer {
+  display: flex;
+  flex-direction: column;
+
+  .notificationTitle {
+    font-size: 1rem;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .button {
+      background: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Neutral Face';
+      font-weight: 600;
+    }
+  }
+
+  .notificationButton {
+    border-radius: 25px;
+    width: 80px;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    color: #2f2f2f;
+    background-color: #f1f5f9;
+    margin-right: 1rem;
+
+    &.cancelNotificationButton {
+      color: #f1f5f9;
+      margin-right: 0;
+      margin-left: 1rem;
+      background-color: #c93f3f;
+    }
+  }
+}
+
+.audio {
+  position: fixed;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.notificationMessage {
+  color: #212121;
+}
+
+.canvasFooterMenu {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  .instructionsIconContainer {
+    i {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        stroke: none;
+
+        path {
+          fill: #e2e8f0;
+        }
+      }
+    }
+  }
+}
